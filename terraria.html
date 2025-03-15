@@ -1,0 +1,42 @@
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Terraria</title>
+  </head>
+  <body>
+    <head>
+      <h1 lang="uk">Чи хочех грати Терарію?</h1>
+      <button lang="uk">Так</button>
+      <button lang="uk">Ні</button>
+    </head>
+    <script>
+      const buttons = document.querySelectorAll("button");
+      buttons[0].addEventListener("click", (_blank) => {
+        window.location.href =
+          "https://www.youtube.com/watch?v=3tKubQSYd1o&t=20s";
+      });
+      buttons[1].addEventListener("click", () => {
+        alert("Навіщо тут ця кнопка?");
+      });
+    </script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </body>
+</html>
